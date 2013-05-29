@@ -1,0 +1,3 @@
+verilog xillyvga_v1_00_a C:\UCSD\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink\tx_system\system\pcores\xillyvga_v1_00_a/hdl/verilog/xillyvga.v
+verilog xillyvga_v1_00_a C:\UCSD\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink\tx_system\system\pcores\xillyvga_v1_00_a/hdl/verilog/xillyvga_core.v
+verilog work ../hdl/system_xillyvga_0_wrapper.v

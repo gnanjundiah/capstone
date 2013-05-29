@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink\tx_system\vhdl\xillydemo.ncd
+OUTFILE=C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink\tx_system\vhdl\xillydemo.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink\tx_system\vhdl
+LICENSE=ISE
+USER_INFO=174590358_176193777_209211523_209

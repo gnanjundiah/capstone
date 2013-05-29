@@ -1,0 +1,2120 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml xillydemo.twx xillydemo.ncd -o xillydemo.twr xillydemo.pcf
+
+Design file:              xillydemo.ncd
+Physical constraint file: xillydemo.pcf
+Device,package,speed:     xc7z020,clg484,C,-1 (ADVANCED 1.02 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: PATH "TS_axi_interconnect_1_reset_resync_path" TIG;
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X30Y119.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.098ns (data path - clock path skew + uncertainty)
+  Source:               xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      1.063ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising
+  Destination Clock:    bus_clk rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y119.AMUX   Tshcko                0.649   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X30Y119.BX     net (fanout=1)        0.384   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X30Y119.CLK    Tdick                 0.030   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.063ns (0.679ns logic, 0.384ns route)
+                                                       (63.9% logic, 36.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X30Y119.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.088ns (data path - clock path skew + uncertainty)
+  Source:               xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      1.053ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y119.BMUX   Tshcko                0.655   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X30Y119.CX     net (fanout=1)        0.385   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X30Y119.CLK    Tdick                 0.013   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.053ns (0.668ns logic, 0.385ns route)
+                                                       (63.4% logic, 36.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_axi_interconnect_1_reset_resync_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X30Y119.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.250ns (datapath - clock path skew - uncertainty)
+  Source:               xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      0.285ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising
+  Destination Clock:    bus_clk rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y119.AMUX   Tshcko                0.201   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X30Y119.BX     net (fanout=1)        0.137   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X30Y119.CLK    Tckdi       (-Th)     0.053   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.285ns (0.148ns logic, 0.137ns route)
+                                                       (51.9% logic, 48.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X30Y119.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.276ns (datapath - clock path skew - uncertainty)
+  Source:               xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      0.276ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising at 10.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y119.BMUX   Tshcko                0.202   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X30Y119.CX     net (fanout=1)        0.138   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X30Y119.CLK    Tckdi       (-Th)     0.064   xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.276ns (0.138ns logic, 0.138ns route)
+                                                       (50.0% logic, 50.0% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X28Y147.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.094ns (data path - clock path skew + uncertainty)
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      1.059ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising
+  Destination Clock:    bus_clk rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y147.AQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X28Y147.BX     net (fanout=1)        0.522   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X28Y147.CLK    Tdick                 0.081   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.059ns (0.537ns logic, 0.522ns route)
+                                                       (50.7% logic, 49.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X28Y147.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (setup path):     1.079ns (data path - clock path skew + uncertainty)
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      1.044ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y147.BQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X28Y147.CX     net (fanout=1)        0.527   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X28Y147.CLK    Tdick                 0.061   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.044ns (0.517ns logic, 0.527ns route)
+                                                       (49.5% logic, 50.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (SLICE_X28Y147.BX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.254ns (datapath - clock path skew - uncertainty)
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      0.289ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising
+  Destination Clock:    bus_clk rising
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y147.AQ     Tcko                  0.141   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X28Y147.BX     net (fanout=1)        0.214   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<0>
+    SLICE_X28Y147.CLK    Tckdi       (-Th)     0.066   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.289ns (0.075ns logic, 0.214ns route)
+                                                       (26.0% logic, 74.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (SLICE_X28Y147.CX), 1 path
+--------------------------------------------------------------------------------
+Delay (hold path):      0.285ns (datapath - clock path skew - uncertainty)
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      0.285ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         bus_clk rising at 10.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y147.BQ     Tcko                  0.141   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X28Y147.CX     net (fanout=1)        0.214   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<1>
+    SLICE_X28Y147.CLK    Tckdi       (-Th)     0.070   xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.285ns (0.071ns logic, 0.214ns route)
+                                                       (24.9% logic, 75.1% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_fpga_1 = PERIOD TIMEGRP "clk_fpga_1" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 124515 paths analyzed, 17975 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.819ns.
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4 (SLICE_X97Y99.SR), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.181ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.570ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.214ns (1.417 - 1.631)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y145.BQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+    SLICE_X37Y141.B1     net (fanout=4)        1.540   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+    SLICE_X37Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/N18
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1
+    SLICE_X36Y141.A2     net (fanout=5)        0.712   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_ARADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4
+    -------------------------------------------------  ---------------------------
+    Total                                      8.570ns (1.631ns logic, 6.939ns route)
+                                                       (19.0% logic, 81.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.321ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.429ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.215ns (1.417 - 1.632)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y149.DQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2
+    SLICE_X36Y141.B1     net (fanout=13)       1.643   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d<2>
+    SLICE_X36Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_awvalid<0>1
+    SLICE_X36Y141.A4     net (fanout=2)        0.468   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4
+    -------------------------------------------------  ---------------------------
+    Total                                      8.429ns (1.631ns logic, 6.798ns route)
+                                                       (19.3% logic, 80.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.554ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.206ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.205ns (1.417 - 1.622)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y132.AQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0
+    SLICE_X37Y141.B5     net (fanout=10)       1.176   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>
+    SLICE_X37Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/N18
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1
+    SLICE_X36Y141.A2     net (fanout=5)        0.712   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_ARADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_4
+    -------------------------------------------------  ---------------------------
+    Total                                      8.206ns (1.631ns logic, 6.575ns route)
+                                                       (19.9% logic, 80.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5 (SLICE_X97Y99.SR), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.181ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.570ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.214ns (1.417 - 1.631)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y145.BQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+    SLICE_X37Y141.B1     net (fanout=4)        1.540   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+    SLICE_X37Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/N18
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1
+    SLICE_X36Y141.A2     net (fanout=5)        0.712   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_ARADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.570ns (1.631ns logic, 6.939ns route)
+                                                       (19.0% logic, 81.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.321ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.429ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.215ns (1.417 - 1.632)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y149.DQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2
+    SLICE_X36Y141.B1     net (fanout=13)       1.643   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d<2>
+    SLICE_X36Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_awvalid<0>1
+    SLICE_X36Y141.A4     net (fanout=2)        0.468   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.429ns (1.631ns logic, 6.798ns route)
+                                                       (19.3% logic, 80.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.554ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.206ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.205ns (1.417 - 1.622)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y132.AQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0
+    SLICE_X37Y141.B5     net (fanout=10)       1.176   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>
+    SLICE_X37Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/N18
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1
+    SLICE_X36Y141.A2     net (fanout=5)        0.712   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_ARADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.206ns (1.631ns logic, 6.575ns route)
+                                                       (19.9% logic, 80.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6 (SLICE_X97Y99.SR), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.181ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.570ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.214ns (1.417 - 1.631)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y145.BQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+    SLICE_X37Y141.B1     net (fanout=4)        1.540   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2
+    SLICE_X37Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/N18
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1
+    SLICE_X36Y141.A2     net (fanout=5)        0.712   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_ARADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6
+    -------------------------------------------------  ---------------------------
+    Total                                      8.570ns (1.631ns logic, 6.939ns route)
+                                                       (19.0% logic, 81.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.321ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.429ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.215ns (1.417 - 1.632)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y149.DQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d<2>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2
+    SLICE_X36Y141.B1     net (fanout=13)       1.643   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d<2>
+    SLICE_X36Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_awvalid<0>1
+    SLICE_X36Y141.A4     net (fanout=2)        0.468   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6
+    -------------------------------------------------  ---------------------------
+    Total                                      8.429ns (1.631ns logic, 6.798ns route)
+                                                       (19.3% logic, 80.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.554ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.206ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.205ns (1.417 - 1.622)
+  Source Clock:         bus_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0 to xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y132.AQ     Tcko                  0.456   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot_0
+    SLICE_X37Y141.B5     net (fanout=10)       1.176   xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_hot<0>
+    SLICE_X37Y141.B      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/N18
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_arvalid<0>1
+    SLICE_X36Y141.A2     net (fanout=5)        0.712   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_ARADDRCONTROL<0>
+    SLICE_X36Y141.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_AWADDRCONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n011611
+    SLICE_X38Y139.B4     net (fanout=2)        0.734   xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/_n01161
+    SLICE_X38Y139.BMUX   Tilo                  0.374   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[0].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_req1
+    SLICE_X38Y139.A1     net (fanout=4)        0.712   xillybus_ins/S_AXI_AWVALID
+    SLICE_X38Y139.A      Tilo                  0.124   xillybus_ins/system_i/axi4lite_0/DEBUG_MC_MP_RDATACONTROL<0>
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv1
+    SLICE_X97Y99.SR      net (fanout=5)        3.241   xillybus_ins/xillybus_core_ins/misc_ins/recv_dma_balanced_inv
+    SLICE_X97Y99.CLK     Tsrck                 0.429   xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt[7]
+                                                       xillybus_ins/xillybus_core_ins/misc_ins/rd_unbal_cnt_6
+    -------------------------------------------------  ---------------------------
+    Total                                      8.206ns (1.631ns logic, 6.575ns route)
+                                                       (19.9% logic, 80.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk_fpga_1 = PERIOD TIMEGRP "clk_fpga_1" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X3Y39.DIBDI6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.010ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/axi_read_dma_ins/fifo_wr_data_24 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.297ns (Levels of Logic = 0)
+  Clock Path Skew:      0.287ns (0.797 - 0.510)
+  Source Clock:         bus_clk rising at 10.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/axi_read_dma_ins/fifo_wr_data_24 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X34Y99.AQ        Tcko                  0.164   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/axi_read_dma_ins/fifo_wr_data[27]
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/axi_read_dma_ins/fifo_wr_data_24
+    RAMB18_X3Y39.DIBDI6    net (fanout=1)        0.429   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/axi_read_dma_ins/fifo_wr_data[24]
+    RAMB18_X3Y39.CLKBWRCLK Trckd_DIB   (-Th)     0.296   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ---------------------------------------------------  ---------------------------
+    Total                                        0.297ns (-0.132ns logic, 0.429ns route)
+                                                         (-44.4% logic, 144.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/M_AXI_AWADDR_10 (SLICE_X26Y101.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.012ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/queue_bufaddr_10 (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/M_AXI_AWADDR_10 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.376ns (Levels of Logic = 1)
+  Clock Path Skew:      0.364ns (0.897 - 0.533)
+  Source Clock:         bus_clk rising at 10.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/queue_bufaddr_10 to xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/M_AXI_AWADDR_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y98.CQ      Tcko                  0.141   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/queue_bufaddr[11]
+                                                       xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/queue_bufaddr_10
+    SLICE_X26Y101.C6     net (fanout=2)        0.259   xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/queue_bufaddr[10]
+    SLICE_X26Y101.CLK    Tah         (-Th)     0.024   xillybus_ins/M_AXI_AWADDR<11>
+                                                       xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/Mmux__n1066_rs_lut[10]
+                                                       xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/Mmux__n1066_rs_cy[11]
+                                                       xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/M_AXI_AWADDR_10
+    -------------------------------------------------  ---------------------------
+    Total                                      0.376ns (0.117ns logic, 0.259ns route)
+                                                       (31.1% logic, 68.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/state_2 (SLICE_X50Y76.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.021ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/client_last (FF)
+  Destination:          xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/state_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.236ns (Levels of Logic = 1)
+  Clock Path Skew:      0.215ns (0.708 - 0.493)
+  Source Clock:         bus_clk rising at 10.000ns
+  Destination Clock:    bus_clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/client_last to xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/state_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X49Y76.DQ      Tcko                  0.141   xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/client_last
+                                                       xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/client_last
+    SLICE_X50Y76.C5      net (fanout=4)        0.171   xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/client_last
+    SLICE_X50Y76.CLK     Tah         (-Th)     0.076   xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/state[2]
+                                                       xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/state[2]_GND_11_o_wide_mux_37_OUT[2]1
+                                                       xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/state_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.236ns (0.065ns logic, 0.171ns route)
+                                                       (27.5% logic, 72.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_fpga_1 = PERIOD TIMEGRP "clk_fpga_1" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.056ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.944ns (339.674MHz) (Trper_CLKA)
+  Physical resource: xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/Mram_rd_dma_address/CLKARDCLK
+  Logical resource: xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/Mram_rd_dma_address/CLKARDCLK
+  Location pin: RAMB18_X2Y37.CLKARDCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+Slack: 7.056ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.944ns (339.674MHz) (Trper_CLKB)
+  Physical resource: xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/Mram_rd_dma_address/CLKBWRCLK
+  Logical resource: xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/Mram_rd_dma_address/CLKBWRCLK
+  Location pin: RAMB18_X2Y37.CLKBWRCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+Slack: 7.056ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.944ns (339.674MHz) (Trper_CLKA)
+  Physical resource: audio_ins/record_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKARDCLK
+  Logical resource: audio_ins/record_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKARDCLK
+  Location pin: RAMB18_X0Y3.CLKARDCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_gclk = PERIOD TIMEGRP "TN_gclk" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4 paths analyzed, 4 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+Paths for end point audio_ins/audio_mclk (OLOGIC_X0Y20.D1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     8.033ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_ins/clk_div_1 (FF)
+  Destination:          audio_ins/audio_mclk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.842ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.090ns (0.828 - 0.918)
+  Source Clock:         clk_100_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_ins/clk_div_1 to audio_ins/audio_mclk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y19.BQ       Tcko                  0.518   audio_ins/clk_div<1>
+                                                       audio_ins/clk_div_1
+    OLOGIC_X0Y20.D1      net (fanout=2)        0.533   audio_ins/clk_div<1>
+    OLOGIC_X0Y20.CLK     Todck                 0.791   audio_ins/audio_mclk
+                                                       audio_ins/audio_mclk
+    -------------------------------------------------  ---------------------------
+    Total                                      1.842ns (1.309ns logic, 0.533ns route)
+                                                       (71.1% logic, 28.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_ins/clk_div_1 (SLICE_X0Y19.B2), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     8.733ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_ins/clk_div_1 (FF)
+  Destination:          audio_ins/clk_div_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.232ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_100_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_ins/clk_div_1 to audio_ins/clk_div_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y19.BQ       Tcko                  0.518   audio_ins/clk_div<1>
+                                                       audio_ins/clk_div_1
+    SLICE_X0Y19.B2       net (fanout=2)        0.671   audio_ins/clk_div<1>
+    SLICE_X0Y19.CLK      Tas                   0.043   audio_ins/clk_div<1>
+                                                       audio_ins/Mcount_clk_div_xor<1>11
+                                                       audio_ins/clk_div_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.232ns (0.561ns logic, 0.671ns route)
+                                                       (45.5% logic, 54.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_ins/clk_div_0 (SLICE_X0Y19.A3), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     8.862ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_ins/clk_div_0 (FF)
+  Destination:          audio_ins/clk_div_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      1.103ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_100_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_ins/clk_div_0 to audio_ins/clk_div_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y19.AQ       Tcko                  0.518   audio_ins/clk_div<1>
+                                                       audio_ins/clk_div_0
+    SLICE_X0Y19.A3       net (fanout=2)        0.538   audio_ins/clk_div<0>
+    SLICE_X0Y19.CLK      Tas                   0.047   audio_ins/clk_div<1>
+                                                       audio_ins/Mcount_clk_div_xor<0>11_INV_0
+                                                       audio_ins/clk_div_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.103ns (0.565ns logic, 0.538ns route)
+                                                       (51.2% logic, 48.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_gclk = PERIOD TIMEGRP "TN_gclk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point audio_ins/clk_div_1 (SLICE_X0Y19.B3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.277ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               audio_ins/clk_div_0 (FF)
+  Destination:          audio_ins/clk_div_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.277ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_100_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: audio_ins/clk_div_0 to audio_ins/clk_div_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y19.AQ       Tcko                  0.164   audio_ins/clk_div<1>
+                                                       audio_ins/clk_div_0
+    SLICE_X0Y19.B3       net (fanout=2)        0.189   audio_ins/clk_div<0>
+    SLICE_X0Y19.CLK      Tah         (-Th)     0.076   audio_ins/clk_div<1>
+                                                       audio_ins/Mcount_clk_div_xor<1>11
+                                                       audio_ins/clk_div_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.277ns (0.088ns logic, 0.189ns route)
+                                                       (31.8% logic, 68.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_ins/clk_div_0 (SLICE_X0Y19.A3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.278ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               audio_ins/clk_div_0 (FF)
+  Destination:          audio_ins/clk_div_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.278ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_100_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: audio_ins/clk_div_0 to audio_ins/clk_div_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y19.AQ       Tcko                  0.164   audio_ins/clk_div<1>
+                                                       audio_ins/clk_div_0
+    SLICE_X0Y19.A3       net (fanout=2)        0.189   audio_ins/clk_div<0>
+    SLICE_X0Y19.CLK      Tah         (-Th)     0.075   audio_ins/clk_div<1>
+                                                       audio_ins/Mcount_clk_div_xor<0>11_INV_0
+                                                       audio_ins/clk_div_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.278ns (0.089ns logic, 0.189ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_ins/clk_div_1 (SLICE_X0Y19.B2), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.336ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               audio_ins/clk_div_1 (FF)
+  Destination:          audio_ins/clk_div_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.336ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_100_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: audio_ins/clk_div_1 to audio_ins/clk_div_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y19.BQ       Tcko                  0.164   audio_ins/clk_div<1>
+                                                       audio_ins/clk_div_1
+    SLICE_X0Y19.B2       net (fanout=2)        0.248   audio_ins/clk_div<1>
+    SLICE_X0Y19.CLK      Tah         (-Th)     0.076   audio_ins/clk_div<1>
+                                                       audio_ins/Mcount_clk_div_xor<1>11
+                                                       audio_ins/clk_div_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.336ns (0.088ns logic, 0.248ns route)
+                                                       (26.2% logic, 73.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_gclk = PERIOD TIMEGRP "TN_gclk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKIN1
+  Logical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKIN1
+  Location pin: PLLE2_ADV_X0Y0.CLKIN1
+  Clock network: clk_100_BUFGP
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKIN1
+  Logical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_clk_ins/vga_pll/CLKIN1
+  Location pin: PLLE2_ADV_X0Y0.CLKIN1
+  Clock network: clk_100_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.845ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
+  Physical resource: clk_100_BUFGP/BUFG/I0
+  Logical resource: clk_100_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_100_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_force_iob_ffs = MAXDELAY FROM TIMEGRP "tgrp_vga_pads_ffs" 
+5.5 ns;
+For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
+
+ 14 paths analyzed, 14 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   5.347ns.
+--------------------------------------------------------------------------------
+
+Paths for end point vga4_green<2> (AB21.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  0.153ns (requirement - data path)
+  Source:               xillybus_ins/vga_iob_ff<8> (FF)
+  Destination:          vga4_green<2> (PAD)
+  Requirement:          5.500ns
+  Data Path Delay:      5.347ns (Levels of Logic = 1)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/vga_iob_ff<8> to vga4_green<2>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    OLOGIC_X1Y33.OQ      Tockq                 0.448   vga4_green_2_OBUF
+                                                       xillybus_ins/vga_iob_ff<8>
+    AB21.O               net (fanout=1)        0.001   vga4_green_2_OBUF
+    AB21.PAD             Tioop                 4.898   vga4_green<2>
+                                                       vga4_green_2_OBUF
+                                                       vga4_green<2>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.347ns (5.346ns logic, 0.001ns route)
+                                                       (100.0% logic, 0.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point vga4_green<0> (AB22.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  0.155ns (requirement - data path)
+  Source:               xillybus_ins/vga_iob_ff<6> (FF)
+  Destination:          vga4_green<0> (PAD)
+  Requirement:          5.500ns
+  Data Path Delay:      5.345ns (Levels of Logic = 1)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/vga_iob_ff<6> to vga4_green<0>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    OLOGIC_X1Y35.OQ      Tockq                 0.448   vga4_green_0_OBUF
+                                                       xillybus_ins/vga_iob_ff<6>
+    AB22.O               net (fanout=1)        0.001   vga4_green_0_OBUF
+    AB22.PAD             Tioop                 4.896   vga4_green<0>
+                                                       vga4_green_0_OBUF
+                                                       vga4_green<0>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.345ns (5.344ns logic, 0.001ns route)
+                                                       (100.0% logic, 0.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point vga_vsync (Y19.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  0.158ns (requirement - data path)
+  Source:               xillybus_ins/vga_iob_ff<0> (FF)
+  Destination:          vga_vsync (PAD)
+  Requirement:          5.500ns
+  Data Path Delay:      5.342ns (Levels of Logic = 1)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/vga_iob_ff<0> to vga_vsync
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    OLOGIC_X1Y28.OQ      Tockq                 0.448   vga_vsync_OBUF
+                                                       xillybus_ins/vga_iob_ff<0>
+    Y19.O                net (fanout=1)        0.001   vga_vsync_OBUF
+    Y19.PAD              Tioop                 4.893   vga_vsync
+                                                       vga_vsync_OBUF
+                                                       vga_vsync
+    -------------------------------------------------  ---------------------------
+    Total                                      5.342ns (5.341ns logic, 0.001ns route)
+                                                       (100.0% logic, 0.0% route)
+
+--------------------------------------------------------------------------------
+Hold Paths: TS_force_iob_ffs = MAXDELAY FROM TIMEGRP "tgrp_vga_pads_ffs" 5.5 ns;
+--------------------------------------------------------------------------------
+
+Paths for end point vga4_red<2> (V19.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest path):   1.556ns (data path)
+  Source:               xillybus_ins/vga_iob_ff<12> (FF)
+  Destination:          vga4_red<2> (PAD)
+  Data Path Delay:      1.556ns (Levels of Logic = 1)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/vga_iob_ff<12> to vga4_red<2>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    OLOGIC_X1Y37.OQ      Tockq                 0.177   vga4_red_2_OBUF
+                                                       xillybus_ins/vga_iob_ff<12>
+    V19.O                net (fanout=1)        0.001   vga4_red_2_OBUF
+    V19.PAD              Tioop                 1.378   vga4_red<2>
+                                                       vga4_red_2_OBUF
+                                                       vga4_red<2>
+    -------------------------------------------------  ---------------------------
+    Total                                      1.556ns (1.555ns logic, 0.001ns route)
+                                                       (99.9% logic, 0.1% route)
+--------------------------------------------------------------------------------
+
+Paths for end point vga4_red<1> (U20.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest path):   1.561ns (data path)
+  Source:               xillybus_ins/vga_iob_ff<11> (FF)
+  Destination:          vga4_red<1> (PAD)
+  Data Path Delay:      1.561ns (Levels of Logic = 1)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/vga_iob_ff<11> to vga4_red<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    OLOGIC_X1Y40.OQ      Tockq                 0.177   vga4_red_1_OBUF
+                                                       xillybus_ins/vga_iob_ff<11>
+    U20.O                net (fanout=1)        0.001   vga4_red_1_OBUF
+    U20.PAD              Tioop                 1.383   vga4_red<1>
+                                                       vga4_red_1_OBUF
+                                                       vga4_red<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      1.561ns (1.560ns logic, 0.001ns route)
+                                                       (99.9% logic, 0.1% route)
+--------------------------------------------------------------------------------
+
+Paths for end point vga4_red<3> (V18.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest path):   1.574ns (data path)
+  Source:               xillybus_ins/vga_iob_ff<13> (FF)
+  Destination:          vga4_red<3> (PAD)
+  Data Path Delay:      1.574ns (Levels of Logic = 1)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/vga_iob_ff<13> to vga4_red<3>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    OLOGIC_X1Y38.OQ      Tockq                 0.177   vga4_red_3_OBUF
+                                                       xillybus_ins/vga_iob_ff<13>
+    V18.O                net (fanout=1)        0.001   vga4_red_3_OBUF
+    V18.PAD              Tioop                 1.396   vga4_red<3>
+                                                       vga4_red_3_OBUF
+                                                       vga4_red<3>
+    -------------------------------------------------  ---------------------------
+    Total                                      1.574ns (1.573ns logic, 0.001ns route)
+                                                       (99.9% logic, 0.1% route)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_CP_CLK_40MHz_FROM_CP_EXT = PERIOD TIMEGRP         
+"CP_CLK_40MHz_FROM_CP_EXT_TS_GROUP" 40 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is  10.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CP_CLK_40MHz_FROM_CP_EXT = PERIOD TIMEGRP
+        "CP_CLK_40MHz_FROM_CP_EXT_TS_GROUP" 40 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 15.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 25.000ns
+  Low pulse: 12.500ns
+  Low pulse limit: 5.000ns (Tmmcmpw_CLKIN1_25_50)
+  Physical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst/CLKIN1
+  Logical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y0.CLKIN1
+  Clock network: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_IN
+--------------------------------------------------------------------------------
+Slack: 15.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 25.000ns
+  High pulse: 12.500ns
+  High pulse limit: 5.000ns (Tmmcmpw_CLKIN1_25_50)
+  Physical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst/CLKIN1
+  Logical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y0.CLKIN1
+  Clock network: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_IN
+--------------------------------------------------------------------------------
+Slack: 22.845ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
+  Physical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_FROM_CHILIPEPPER_BUFG_INST/I0
+  Logical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_FROM_CHILIPEPPER_BUFG_INST/I0
+  Location pin: BUFGCTRL_X0Y31.I0
+  Clock network: CP_CLK_40MHz_FROM_CP_EXT_IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: 
+TS_xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_clk
+out0         = PERIOD TIMEGRP         
+"xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_clkou
+t0"         TS_gclk / 0.65 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3952 paths analyzed, 1038 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.810ns.
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X3Y39.RSTRAMB), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     6.574ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          15.384ns
+  Data Path Delay:      1.556ns (Levels of Logic = 0)
+  Clock Path Skew:      -6.892ns (2.413 - 9.305)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    bus_clk rising at 15.384ns
+  Clock Uncertainty:    0.362ns
+
+  Clock Uncertainty:          0.362ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.240ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X63Y100.AQ       Tcko                  0.456   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2>
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0
+    RAMB18_X3Y39.RSTRAMB   net (fanout=3)        0.741   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<0>
+    RAMB18_X3Y39.CLKBWRCLK Trcck_RSTRAM          0.359   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ---------------------------------------------------  ---------------------------
+    Total                                        1.556ns (0.815ns logic, 0.741ns route)
+                                                         (52.4% logic, 47.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X3Y39.ENARDEN), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     9.446ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          15.384ns
+  Data Path Delay:      5.817ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 15.384ns
+  Clock Uncertainty:    0.121ns
+
+  Clock Uncertainty:          0.121ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    RAMB18_X3Y39.DOBDO13   Trcko_DOB             2.454   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    SLICE_X65Y99.B2        net (fanout=1)        1.190   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_data_w[32]
+    SLICE_X65Y99.B         Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_en1
+    SLICE_X62Y99.C1        net (fanout=2)        0.830   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_en_w
+    SLICE_X62Y99.C         Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1
+    RAMB18_X3Y39.ENARDEN   net (fanout=1)        0.652   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en
+    RAMB18_X3Y39.CLKARDCLK Trcck_RDEN            0.443   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ---------------------------------------------------  ---------------------------
+    Total                                        5.817ns (3.145ns logic, 2.672ns route)
+                                                         (54.1% logic, 45.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          15.384ns
+  Data Path Delay:      3.945ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.262ns (1.392 - 1.654)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 15.384ns
+  Clock Uncertainty:    0.121ns
+
+  Clock Uncertainty:          0.121ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X83Y101.DQ       Tcko                  0.456   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld
+    SLICE_X65Y99.B1        net (fanout=2)        1.316   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld
+    SLICE_X65Y99.B         Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_en1
+    SLICE_X62Y99.C1        net (fanout=2)        0.830   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_en_w
+    SLICE_X62Y99.C         Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1
+    RAMB18_X3Y39.ENARDEN   net (fanout=1)        0.652   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en
+    RAMB18_X3Y39.CLKARDCLK Trcck_RDEN            0.443   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ---------------------------------------------------  ---------------------------
+    Total                                        3.945ns (1.147ns logic, 2.798ns route)
+                                                         (29.1% logic, 70.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.567ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d_1 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          15.384ns
+  Data Path Delay:      3.437ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.259ns (1.392 - 1.651)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 15.384ns
+  Clock Uncertainty:    0.121ns
+
+  Clock Uncertainty:          0.121ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d_1 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X80Y109.BQ       Tcko                  0.456   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d[1]
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d_1
+    SLICE_X65Y99.B5        net (fanout=1)        0.808   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d[1]
+    SLICE_X65Y99.B         Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_en1
+    SLICE_X62Y99.C1        net (fanout=2)        0.830   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_en_w
+    SLICE_X62Y99.C         Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1
+    RAMB18_X3Y39.ENARDEN   net (fanout=1)        0.652   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en
+    RAMB18_X3Y39.CLKARDCLK Trcck_RDEN            0.443   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ---------------------------------------------------  ---------------------------
+    Total                                        3.437ns (1.147ns logic, 2.290ns route)
+                                                         (33.4% logic, 66.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 (SLICE_X61Y97.CE), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     9.522ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 (FF)
+  Requirement:          15.384ns
+  Data Path Delay:      5.668ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.073ns (0.803 - 0.876)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 15.384ns
+  Clock Uncertainty:    0.121ns
+
+  Clock Uncertainty:          0.121ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    RAMB18_X3Y39.DOBDO13 Trcko_DOB             2.454   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    SLICE_X65Y99.B2      net (fanout=1)        1.190   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_data_w[32]
+    SLICE_X65Y99.B       Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_en1
+    SLICE_X62Y99.C1      net (fanout=2)        0.830   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_en_w
+    SLICE_X62Y99.CMUX    Tilo                  0.360   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/ram_rd_en_i1
+    SLICE_X61Y97.CE      net (fanout=4)        0.505   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_rd_en
+    SLICE_X61Y97.CLK     Tceck                 0.205   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.668ns (3.143ns logic, 2.525ns route)
+                                                       (55.5% logic, 44.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.166ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 (FF)
+  Requirement:          15.384ns
+  Data Path Delay:      3.796ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.301ns (1.353 - 1.654)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 15.384ns
+  Clock Uncertainty:    0.121ns
+
+  Clock Uncertainty:          0.121ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X83Y101.DQ     Tcko                  0.456   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld
+    SLICE_X65Y99.B1      net (fanout=2)        1.316   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_unheld
+    SLICE_X65Y99.B       Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_en1
+    SLICE_X62Y99.C1      net (fanout=2)        0.830   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_en_w
+    SLICE_X62Y99.CMUX    Tilo                  0.360   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/ram_rd_en_i1
+    SLICE_X61Y97.CE      net (fanout=4)        0.505   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_rd_en
+    SLICE_X61Y97.CLK     Tceck                 0.205   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    -------------------------------------------------  ---------------------------
+    Total                                      3.796ns (1.145ns logic, 2.651ns route)
+                                                       (30.2% logic, 69.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.677ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d_1 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4 (FF)
+  Requirement:          15.384ns
+  Data Path Delay:      3.288ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.298ns (1.353 - 1.651)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 15.384ns
+  Clock Uncertainty:    0.121ns
+
+  Clock Uncertainty:          0.121ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.232ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d_1 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y109.BQ     Tcko                  0.456   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d[1]
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d_1
+    SLICE_X65Y99.B5      net (fanout=1)        0.808   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/first_pixel_d[1]
+    SLICE_X65Y99.B       Tilo                  0.124   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/scan_ins/fifo_rd_en1
+    SLICE_X62Y99.C1      net (fanout=2)        0.830   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/fifo_rd_en_w
+    SLICE_X62Y99.CMUX    Tilo                  0.360   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/ram_rd_en_i1
+    SLICE_X61Y97.CE      net (fanout=4)        0.505   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_rd_en
+    SLICE_X61Y97.CLK     Tceck                 0.205   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<7>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4
+    -------------------------------------------------  ---------------------------
+    Total                                      3.288ns (1.145ns logic, 2.143ns route)
+                                                       (34.8% logic, 65.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_clkout0
+        = PERIOD TIMEGRP
+        "xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_clkout0"
+        TS_gclk / 0.65 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0 (SLICE_X62Y99.B6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.083ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.205ns (Levels of Logic = 1)
+  Clock Path Skew:      0.122ns (0.759 - 0.637)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X61Y100.CQ     Tcko                  0.141   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_q<2><3>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2
+    SLICE_X62Y99.B6      net (fanout=3)        0.140   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_q<2><2>
+    SLICE_X62Y99.CLK     Tah         (-Th)     0.076   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<4>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_asreg_last[8]_reduce_xor_131_xo<0>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.205ns (0.065ns logic, 0.140ns route)
+                                                       (31.7% logic, 68.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X3Y39.RSTRAMARSTRAM), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.109ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.270ns (Levels of Logic = 0)
+  Clock Path Skew:      0.161ns (0.798 - 0.637)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location                   Delay type         Delay(ns)  Physical Resource
+                                                             Logical Resource(s)
+    -------------------------------------------------------  -------------------
+    SLICE_X63Y100.AQ           Tcko                  0.141   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2>
+                                                             xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0
+    RAMB18_X3Y39.RSTRAMARSTRAM net (fanout=3)        0.318   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<0>
+    RAMB18_X3Y39.CLKARDCLK     Trckc_RSTRAM(-Th)     0.189   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                             xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    -------------------------------------------------------  ---------------------------
+    Total                                            0.270ns (-0.048ns logic, 0.318ns route)
+                                                             (-17.8% logic, 117.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1 (SLICE_X63Y99.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.110ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2 (FF)
+  Destination:          xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.232ns (Levels of Logic = 1)
+  Clock Path Skew:      0.122ns (0.759 - 0.637)
+  Source Clock:         xillybus_ins/vga_clk rising at 0.000ns
+  Destination Clock:    xillybus_ins/vga_clk rising at 0.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2 to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X61Y100.CQ     Tcko                  0.141   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_q<2><3>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_2
+    SLICE_X63Y99.A6      net (fanout=3)        0.137   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_q<2><2>
+    SLICE_X63Y99.CLK     Tah         (-Th)     0.046   xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin<3>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_asreg_last[8]_reduce_xor_121_xo<0>
+                                                       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.232ns (0.095ns logic, 0.137ns route)
+                                                       (40.9% logic, 59.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_clkout0
+        = PERIOD TIMEGRP
+        "xillybus_ins_system_i_xillyvga_0_xillyvga_0_xillyvga_core_ins_vga_clk_ins_clkout0"
+        TS_gclk / 0.65 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.808ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 2.576ns (388.199MHz) (Trper_CLKA)
+  Physical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/screensaver_ins/BRAM_SINGLE_MACRO_inst/bram18_single_bl.bram18_single_bl/CLKARDCLK
+  Logical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/screensaver_ins/BRAM_SINGLE_MACRO_inst/bram18_single_bl.bram18_single_bl/CLKARDCLK
+  Location pin: RAMB18_X5Y50.RDCLK
+  Clock network: xillybus_ins/vga_clk
+--------------------------------------------------------------------------------
+Slack: 12.808ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 2.576ns (388.199MHz) (Trper_CLKA)
+  Physical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKARDCLK
+  Logical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKARDCLK
+  Location pin: RAMB18_X3Y39.CLKARDCLK
+  Clock network: xillybus_ins/vga_clk
+--------------------------------------------------------------------------------
+Slack: 12.808ns (period - min period limit)
+  Period: 15.384ns
+  Min period limit: 2.576ns (388.199MHz) (Trper_CLKB)
+  Physical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKBWRCLK
+  Logical resource: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKBWRCLK
+  Location pin: RAMB18_X3Y39.CLKBWRCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_180_DEG_UNBUF 
+= PERIOD TIMEGRP         
+"RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_180_DEG_UNBUF"         
+TS_CP_CLK_40MHz_FROM_CP_EXT PHASE 12.5 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.155ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_180_DEG_UNBUF = PERIOD TIMEGRP
+        "RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_180_DEG_UNBUF"
+        TS_CP_CLK_40MHz_FROM_CP_EXT PHASE 12.5 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 22.845ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.155ns (464.037MHz) (Tbcper_I(Fmax))
+  Physical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_BUFG_INST/I0
+  Logical resource: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_BUFG_INST/I0
+  Location pin: BUFGCTRL_X0Y1.I0
+  Clock network: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_UNBUF
+--------------------------------------------------------------------------------
+Slack: 23.526ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 1.474ns (678.426MHz) (Tockper)
+  Physical resource: CP_TX_DAC_CLK_EXT_OBUF/CLK
+  Logical resource: RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST/CK
+  Location pin: OLOGIC_X1Y128.CLK
+  Clock network: RF_TX_TOP_INST/CLK_40MHz_180_DEG
+--------------------------------------------------------------------------------
+Slack: 23.526ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 25.000ns
+  High pulse: 12.500ns
+  High pulse limit: 0.737ns (Tospwh)
+  Physical resource: CP_TX_DAC_CLK_EXT_OBUF/SR
+  Logical resource: RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST/SR
+  Location pin: OLOGIC_X1Y128.SR
+  Clock network: RF_TX_TOP_INST/NOT_CLK_GEN_PLL_LOCKED
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_0_DEG_UNBUF = 
+PERIOD TIMEGRP         "RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_0_DEG_UNBUF" 
+        TS_CP_CLK_40MHz_FROM_CP_EXT HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1772 paths analyzed, 895 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.532ns.
+--------------------------------------------------------------------------------
+
+Paths for end point RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X3Y13.RSTRAMB), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     19.468ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          25.000ns
+  Data Path Delay:      1.992ns (Levels of Logic = 0)
+  Clock Path Skew:      -3.243ns (2.406 - 5.649)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    bus_clk rising at 25.000ns
+  Clock Uncertainty:    0.297ns
+
+  Clock Uncertainty:          0.297ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.191ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0 to RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    SLICE_X61Y22.AQ        Tcko                  0.456   RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2>
+                                                         RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0
+    RAMB18_X3Y13.RSTRAMB   net (fanout=3)        1.177   RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<0>
+    RAMB18_X3Y13.CLKBWRCLK Trcck_RSTRAM          0.359   RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                         RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ---------------------------------------------------  ---------------------------
+    Total                                        1.992ns (0.815ns logic, 1.177ns route)
+                                                         (40.9% logic, 59.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4 (SLICE_X56Y12.CE), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     19.578ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      5.282ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.035ns (0.797 - 0.832)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X62Y38.AQ      Tcko                  0.518   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX
+    SLICE_X70Y26.B1      net (fanout=8)        1.673   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX
+    SLICE_X70Y26.B       Tilo                  0.124   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0341_inv
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n021711
+    SLICE_X69Y25.A2      net (fanout=3)        0.828   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X69Y25.AMUX    Tilo                  0.354   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpDRdy
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X56Y12.CE      net (fanout=5)        1.580   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0217
+    SLICE_X56Y12.CLK     Tceck                 0.205   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut<7>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4
+    -------------------------------------------------  ---------------------------
+    Total                                      5.282ns (1.201ns logic, 4.081ns route)
+                                                       (22.7% logic, 77.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.483ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_1 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.389ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.023ns (0.797 - 0.820)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_1 to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X70Y27.BQ      Tcko                  0.456   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<3>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_1
+    SLICE_X70Y26.B2      net (fanout=4)        0.842   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<1>
+    SLICE_X70Y26.B       Tilo                  0.124   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0341_inv
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n021711
+    SLICE_X69Y25.A2      net (fanout=3)        0.828   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X69Y25.AMUX    Tilo                  0.354   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpDRdy
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X56Y12.CE      net (fanout=5)        1.580   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0217
+    SLICE_X56Y12.CLK     Tceck                 0.205   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut<7>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4
+    -------------------------------------------------  ---------------------------
+    Total                                      4.389ns (1.139ns logic, 3.250ns route)
+                                                       (26.0% logic, 74.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.509ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_2 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.363ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.023ns (0.797 - 0.820)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_2 to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X70Y27.CMUX    Tshcko                0.592   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<3>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_2
+    SLICE_X70Y26.B3      net (fanout=4)        0.680   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<2>
+    SLICE_X70Y26.B       Tilo                  0.124   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0341_inv
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n021711
+    SLICE_X69Y25.A2      net (fanout=3)        0.828   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X69Y25.AMUX    Tilo                  0.354   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpDRdy
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X56Y12.CE      net (fanout=5)        1.580   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0217
+    SLICE_X56Y12.CLK     Tceck                 0.205   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut<7>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_4
+    -------------------------------------------------  ---------------------------
+    Total                                      4.363ns (1.275ns logic, 3.088ns route)
+                                                       (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5 (SLICE_X56Y12.CE), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     19.578ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      5.282ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.035ns (0.797 - 0.832)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X62Y38.AQ      Tcko                  0.518   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX
+    SLICE_X70Y26.B1      net (fanout=8)        1.673   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/tmpEnRX
+    SLICE_X70Y26.B       Tilo                  0.124   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0341_inv
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n021711
+    SLICE_X69Y25.A2      net (fanout=3)        0.828   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X69Y25.AMUX    Tilo                  0.354   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpDRdy
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X56Y12.CE      net (fanout=5)        1.580   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0217
+    SLICE_X56Y12.CLK     Tceck                 0.205   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut<7>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.282ns (1.201ns logic, 4.081ns route)
+                                                       (22.7% logic, 77.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.483ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_1 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.389ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.023ns (0.797 - 0.820)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_1 to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X70Y27.BQ      Tcko                  0.456   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<3>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_1
+    SLICE_X70Y26.B2      net (fanout=4)        0.842   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<1>
+    SLICE_X70Y26.B       Tilo                  0.124   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0341_inv
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n021711
+    SLICE_X69Y25.A2      net (fanout=3)        0.828   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X69Y25.AMUX    Tilo                  0.354   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpDRdy
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X56Y12.CE      net (fanout=5)        1.580   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0217
+    SLICE_X56Y12.CLK     Tceck                 0.205   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut<7>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5
+    -------------------------------------------------  ---------------------------
+    Total                                      4.389ns (1.139ns logic, 3.250ns route)
+                                                       (26.0% logic, 74.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     20.509ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_2 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5 (FF)
+  Requirement:          25.000ns
+  Data Path Delay:      4.363ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.023ns (0.797 - 0.820)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 0.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.105ns
+
+  Clock Uncertainty:          0.105ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.198ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_2 to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X70Y27.CMUX    Tshcko                0.592   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<3>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt_2
+    SLICE_X70Y26.B3      net (fanout=4)        0.680   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/SampleCnt<2>
+    SLICE_X70Y26.B       Tilo                  0.124   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0341_inv
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n021711
+    SLICE_X69Y25.A2      net (fanout=3)        0.828   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X69Y25.AMUX    Tilo                  0.354   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpDRdy
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n02171
+    SLICE_X56Y12.CE      net (fanout=5)        1.580   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0217
+    SLICE_X56Y12.CLK     Tceck                 0.205   RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut<7>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/DOut_5
+    -------------------------------------------------  ---------------------------
+    Total                                      4.363ns (1.275ns logic, 3.088ns route)
+                                                       (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_0_DEG_UNBUF = PERIOD TIMEGRP
+        "RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_0_DEG_UNBUF"
+        TS_CP_CLK_40MHz_FROM_CP_EXT HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X2Y3.DIADI8), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.039ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_8 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.083ns (Levels of Logic = 0)
+  Clock Path Skew:      0.044ns (0.384 - 0.340)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_8 to RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y9.AQ       Tcko                  0.141   RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32<11>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_8
+    RAMB18_X2Y3.DIADI8   net (fanout=2)        0.238   RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32<8>
+    RAMB18_X2Y3.CLKBWRCLKTrckd_DIA   (-Th)     0.296   RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.083ns (-0.155ns logic, 0.238ns route)
+                                                       (-186.7% logic, 286.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X2Y3.DIBDI9), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.047ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_25 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.091ns (Levels of Logic = 0)
+  Clock Path Skew:      0.044ns (0.384 - 0.340)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_25 to RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y8.BQ       Tcko                  0.164   RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32<27>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_25
+    RAMB18_X2Y3.DIBDI9   net (fanout=1)        0.223   RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32<25>
+    RAMB18_X2Y3.CLKBWRCLKTrckd_DIB   (-Th)     0.296   RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.091ns (-0.132ns logic, 0.223ns route)
+                                                       (-145.1% logic, 245.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAMB18_X2Y3.DIBDI10), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.048ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_26 (FF)
+  Destination:          RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.092ns (Levels of Logic = 0)
+  Clock Path Skew:      0.044ns (0.384 - 0.340)
+  Source Clock:         RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Destination Clock:    RF_TX_TOP_INST/CLK_40MHz_0_DEG rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_26 to RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X30Y8.CQ       Tcko                  0.164   RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32<27>
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32_26
+    RAMB18_X2Y3.DIBDI10  net (fanout=1)        0.224   RF_TX_TOP_INST/UART_SYSTEM_INST/UART_DATA_OUT_32<26>
+    RAMB18_X2Y3.CLKBWRCLKTrckd_DIB   (-Th)     0.296   RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                                       RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.092ns (-0.132ns logic, 0.224ns route)
+                                                       (-143.5% logic, 243.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_0_DEG_UNBUF = PERIOD TIMEGRP
+        "RF_TX_TOP_INST_CLK_RST_CTRL_INST_CLK_40MHZ_0_DEG_UNBUF"
+        TS_CP_CLK_40MHz_FROM_CP_EXT HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 22.424ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.576ns (388.199MHz) (Trper_CLKA)
+  Physical resource: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKARDCLK
+  Logical resource: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKARDCLK
+  Location pin: RAMB18_X3Y13.CLKARDCLK
+  Clock network: RF_TX_TOP_INST/CLK_40MHz_0_DEG
+--------------------------------------------------------------------------------
+Slack: 22.424ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.576ns (388.199MHz) (Trper_CLKB)
+  Physical resource: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKBWRCLK
+  Logical resource: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKBWRCLK
+  Location pin: RAMB18_X3Y13.CLKBWRCLK
+  Clock network: bus_clk
+--------------------------------------------------------------------------------
+Slack: 22.424ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 2.576ns (388.199MHz) (Trper_CLKB)
+  Physical resource: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKBWRCLK
+  Logical resource: RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram/CLKBWRCLK
+  Location pin: RAMB18_X2Y3.CLKBWRCLK
+  Clock network: RF_TX_TOP_INST/CLK_40MHz_0_DEG
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_gclk
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_gclk                        |     10.000ns|      4.000ns|      5.726ns|            0|            0|            4|         3952|
+| TS_xillybus_ins_system_i_xilly|     15.385ns|      8.810ns|          N/A|            0|            0|         3952|            0|
+| vga_0_xillyvga_0_xillyvga_core|             |             |             |             |             |             |             |
+| _ins_vga_clk_ins_clkout0      |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_CP_CLK_40MHz_FROM_CP_EXT
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_CP_CLK_40MHz_FROM_CP_EXT    |     25.000ns|     10.000ns|      5.532ns|            0|            0|            0|         1772|
+| TS_RF_TX_TOP_INST_CLK_RST_CTRL|     25.000ns|      2.155ns|          N/A|            0|            0|            0|            0|
+| _INST_CLK_40MHZ_180_DEG_UNBUF |             |             |             |             |             |             |             |
+| TS_RF_TX_TOP_INST_CLK_RST_CTRL|     25.000ns|      5.532ns|          N/A|            0|            0|         1772|            0|
+| _INST_CLK_40MHZ_0_DEG_UNBUF   |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk_100 to Pad
+-------------+-----------------+------------+-----------------+------------+--------------------+--------+
+             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                    | Clock  |
+Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)   | Phase  |
+-------------+-----------------+------------+-----------------+------------+--------------------+--------+
+vga4_blue<0> |        14.569(R)|      SLOW  |         5.049(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_blue<1> |        14.568(R)|      SLOW  |         5.047(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_blue<2> |        14.582(R)|      SLOW  |         5.062(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_blue<3> |        14.571(R)|      SLOW  |         5.051(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_green<0>|        14.598(R)|      SLOW  |         5.074(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_green<1>|        14.588(R)|      SLOW  |         5.064(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_green<2>|        14.599(R)|      SLOW  |         5.076(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_green<3>|        14.587(R)|      SLOW  |         5.064(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_red<0>  |        14.581(R)|      SLOW  |         5.057(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_red<1>  |        14.558(R)|      SLOW  |         5.035(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_red<2>  |        14.554(R)|      SLOW  |         5.030(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga4_red<3>  |        14.572(R)|      SLOW  |         5.048(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga_hsync    |        14.573(R)|      SLOW  |         5.055(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+vga_vsync    |        14.586(R)|      SLOW  |         5.067(R)|      FAST  |xillybus_ins/vga_clk|   0.000|
+-------------+-----------------+------------+-----------------+------------+--------------------+--------+
+
+Clock to Setup on destination clock CP_CLK_40MHz_FROM_CP_EXT
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+CP_CLK_40MHz_FROM_CP_EXT|    5.422|         |         |         |
+------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |    5.938|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 130261 paths, 0 nets, and 20967 connections
+
+Design statistics:
+   Minimum period:  10.000ns{1}   (Maximum frequency: 100.000MHz)
+   Maximum path delay from/to any node:   5.347ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sat May 25 14:36:41 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 673 MB
+
+
+

@@ -1,0 +1,12 @@
+# Output products list for <ila_pro_2>
+ila_pro_2.cdc
+ila_pro_2.gise
+ila_pro_2.ngc
+ila_pro_2.ucf
+ila_pro_2.vhd
+ila_pro_2.vho
+ila_pro_2.xco
+ila_pro_2.xise
+ila_pro_2_flist.txt
+ila_pro_2_readme.txt
+ila_pro_2_xmdf.tcl

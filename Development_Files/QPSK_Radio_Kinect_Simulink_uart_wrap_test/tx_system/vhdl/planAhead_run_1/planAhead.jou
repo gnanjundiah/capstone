@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2.1 (64-bit)
+# Build 200253 by xbuild on Wed Aug 29 11:48:13 MDT 2012
+# Start of session at: Thu May 23 22:23:43 2013
+# Process ID: 6296
+# Log file: C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/pa.fromNetlist.tcl

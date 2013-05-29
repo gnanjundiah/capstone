@@ -1,0 +1,17 @@
+C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\xillydemo.ngc 1369533715
+../system/implementation/system.ngc 1368393730
+../system/implementation/system_xillybus_0_wrapper.ngc 1368393508
+../system/implementation/system_xillybus_lite_0_wrapper.ngc 1368393684
+../system/implementation/system_processing_system7_0_wrapper.ngc 1368393481
+../system/implementation/system_xillyvga_0_wrapper.ngc 1368393564
+../cores/xillyvga_core.ngc 1347980294
+../runonce/vga_fifo.ngc 1368395588
+../system/implementation/system_axi_interconnect_0_wrapper.ngc 1368393654
+../system/implementation/system_axi4lite_0_wrapper.ngc 1368393640
+../system/implementation/system_axi_interconnect_1_wrapper.ngc 1368393669
+../cores/xillybus_core.ngc 1368288778
+../runonce/fifo_32x512.ngc 1368396258
+ipcore_dir/fifo_8x2048_async_tk.ngc 1368402650
+ipcore_dir/FIFO_32x512_ASYNC.ngc 1369507106
+../runonce/fifo_8x2048.ngc 1368396032
+OK

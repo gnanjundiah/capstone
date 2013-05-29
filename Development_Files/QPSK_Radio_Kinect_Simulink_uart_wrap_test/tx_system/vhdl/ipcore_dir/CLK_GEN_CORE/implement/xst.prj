@@ -1,0 +1,2 @@
+vhdl work ../../CLK_GEN_CORE.vhd
+vhdl work ../example_design/CLK_GEN_CORE_exdes.vhd

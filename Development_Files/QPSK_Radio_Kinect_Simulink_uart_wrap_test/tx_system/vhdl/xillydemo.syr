@@ -1,0 +1,1361 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: xillydemo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xillydemo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "xillydemo"
+Output Format                      : NGC
+Target Device                      : xc7z020-1-clg484
+
+---- Source Options
+Top Module Name                    : xillydemo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir" "C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation" "C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/cores" "C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/runonce"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillybus_core.v" into library work
+Parsing module <xillybus_core>.
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\system.v" into library work
+Parsing module <system>.
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\fifo_8x2048.v" into library work
+Parsing module <fifo_8x2048>.
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\fifo_32x512.v" into library work
+Parsing module <fifo_32x512>.
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillybus.v" into library work
+Parsing module <xillybus>.
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\smbus.v" into library work
+Parsing module <smbus>.
+Analyzing Verilog file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" into library work
+Parsing module <i2s_audio>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\fifo_8x2048_async_tk_synth.vhd" into library work
+Parsing entity <fifo_8x2048_async_tk>.
+Parsing architecture <zynq> of entity <fifo_8x2048_async_tk>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\fifo_8x2048_async_tk.vhd" into library work
+Parsing entity <fifo_8x2048_async_tk>.
+Parsing architecture <fifo_8x2048_async_tk_a> of entity <fifo_8x2048_async_tk>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\CLK_GEN_CORE.vhd" into library work
+Parsing entity <CLK_GEN_CORE>.
+Parsing architecture <xilinx> of entity <clk_gen_core>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\CLK_GEN_CORE\example_design\CLK_GEN_CORE_exdes.vhd" into library work
+Parsing entity <CLK_GEN_CORE_exdes>.
+Parsing architecture <xilinx> of entity <clk_gen_core_exdes>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\FIFO_32x512_ASYNC.vhd" into library work
+Parsing entity <FIFO_32x512_ASYNC>.
+Parsing architecture <FIFO_32x512_ASYNC_a> of entity <fifo_32x512_async>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\FIFO_32x512_ASYNC_synth.vhd" into library work
+Parsing entity <FIFO_32x512_ASYNC>.
+Parsing architecture <zynq> of entity <fifo_32x512_async>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\uart_lib.vhd" into library work
+Parsing package <UART_Def>.
+Parsing package body <UART_Def>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\TxUnit.vhd" into library work
+Parsing entity <TxUnit>.
+Parsing architecture <Behaviour> of entity <txunit>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\RxUnit.vhd" into library work
+Parsing entity <RxUnit>.
+Parsing architecture <Behaviour> of entity <rxunit>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\clkUnit.vhd" into library work
+Parsing entity <ClkUnit>.
+Parsing architecture <Behaviour> of entity <clkunit>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" into library work
+Parsing entity <miniUART>.
+Parsing architecture <uart> of entity <miniuart>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART_SYSTEM.vhd" into library work
+Parsing entity <UART_SYSTEM>.
+Parsing architecture <UART_SYSTEM_ARCH> of entity <uart_system>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\CLK_RST_CTRL.vhd" into library work
+Parsing entity <CLK_RST_CTRL>.
+Parsing architecture <CLK_RST_CTRL_ARCH> of entity <clk_rst_ctrl>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd" into library work
+Parsing entity <RF_TX_TOP>.
+Parsing architecture <RF_TX_TOP_ARCH> of entity <rf_tx_top>.
+Parsing VHDL file "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd" into library work
+Parsing entity <xillydemo>.
+Parsing architecture <sample_arch> of entity <xillydemo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <xillydemo> (architecture <sample_arch>) from library <work>.
+Going to verilog side to elaborate module xillybus
+
+Elaborating module <xillybus>.
+
+Elaborating module <FDCE>.
+
+Elaborating module <system>.
+WARNING:HDLCompiler:1499 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\system.v" Line 1: Empty module <system> remains a black box.
+
+Elaborating module <xillybus_core>.
+WARNING:HDLCompiler:1499 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillybus_core.v" Line 1: Empty module <xillybus_core> remains a black box.
+Back to vhdl to continue elaboration
+
+Elaborating entity <RF_TX_TOP> (architecture <RF_TX_TOP_ARCH>) from library <work>.
+
+Elaborating entity <CLK_RST_CTRL> (architecture <CLK_RST_CTRL_ARCH>) from library <work>.
+
+Elaborating entity <CLK_GEN_CORE> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <fifo_8x2048_async_tk> (architecture <fifo_8x2048_async_tk_a>) from library <work>.
+
+Elaborating entity <UART_SYSTEM> (architecture <UART_SYSTEM_ARCH>) from library <work>.
+
+Elaborating entity <miniUART> (architecture <uart>) from library <work>.
+
+Elaborating entity <ClkUnit> (architecture <Behaviour>) from library <work>.
+
+Elaborating entity <TxUnit> (architecture <Behaviour>) from library <work>.
+
+Elaborating entity <RxUnit> (architecture <Behaviour>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 183: cs_n should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 188: cs_n should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 193: read should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 195: read should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 196: rxdata should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 197: read should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 198: csreg should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 201: load should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 203: load should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd" Line 204: datain should be on the sensitivity list of the process
+
+Elaborating entity <FIFO_32x512_ASYNC> (architecture <zynq>) from library <work>.
+Going to verilog side to elaborate module i2s_audio
+
+Elaborating module <i2s_audio>.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" Line 55: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" Line 72: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" Line 91: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" Line 100: Result of 33-bit expression is truncated to fit in 32-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" Line 101: Result of 32-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <fifo_32x512>.
+WARNING:HDLCompiler:1499 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\fifo_32x512.v" Line 1: Empty module <fifo_32x512> remains a black box.
+Back to vhdl to continue elaboration
+Going to verilog side to elaborate module smbus
+
+Elaborating module <smbus(clk_freq=150,st_idle=0,st_start=1,st_fetch=2,st_bit0=3,st_bit1=4,st_bit2=5,st_ack0=6,st_ack1=7,st_ack2=8,st_stop0=9,st_stop1=10,st_stop2=11)>.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\smbus.v" Line 87: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\smbus.v" Line 145: Result of 32-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <fifo_8x2048>.
+WARNING:HDLCompiler:1499 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\fifo_8x2048.v" Line 1: Empty module <fifo_8x2048> remains a black box.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <xillydemo>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd".
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd" line 332: Output port <user_wren> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd" line 332: Output port <user_r_read_8_rden> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd" line 332: Output port <user_r_mem_8_open> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd" line 332: Output port <user_w_mem_8_open> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillydemo.vhd" line 332: Output port <user_mem_8_addr_update> of the instance <xillybus_ins> is unconnected or connected to loadless signal.
+    Found 32x8-bit single-port RAM <Mram_demoarray> for signal <demoarray>.
+    Found 32x8-bit single-port RAM <Mram_litearray0> for signal <litearray0>.
+    Found 32x8-bit single-port RAM <Mram_litearray1> for signal <litearray1>.
+    Found 32x8-bit single-port RAM <Mram_litearray2> for signal <litearray2>.
+    Found 32x8-bit single-port RAM <Mram_litearray3> for signal <litearray3>.
+    Found 8-bit register for signal <user_r_mem_8_data>.
+    Found 32-bit register for signal <user_rd_data>.
+    Summary:
+	inferred   5 RAM(s).
+	inferred  40 D-type flip-flop(s).
+Unit <xillydemo> synthesized.
+
+Synthesizing Unit <xillybus>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillybus.v".
+    Set property "IOB = TRUE" for instance <vga_iob_ff<0>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<1>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<2>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<3>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<4>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<5>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<6>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<7>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<8>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<9>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<10>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<11>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<12>>.
+    Set property "IOB = TRUE" for instance <vga_iob_ff<13>>.
+    Set property "BOX_TYPE = user_black_box" for instance <system_i>.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\xillybus.v" line 186: Output port <xillyvga_0_vga_de> of the instance <system_i> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <xillybus> synthesized.
+
+Synthesizing Unit <RF_TX_TOP>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd".
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd" line 145: Output port <CLK_20MHZ_0_DEG> of the instance <CLK_RST_CTRL_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd" line 145: Output port <CLK_GEN_PLL_LOCKED> of the instance <CLK_RST_CTRL_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd" line 145: Output port <TX_SYSTEM_RESET> of the instance <CLK_RST_CTRL_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd" line 161: Output port <dout> of the instance <FIFO_8X2048_ASYNC_TK_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\RF_TX_TOP.vhd" line 161: Output port <empty> of the instance <FIFO_8X2048_ASYNC_TK_INST> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <RF_TX_TOP> synthesized.
+
+Synthesizing Unit <CLK_RST_CTRL>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\CLK_RST_CTRL.vhd".
+WARNING:Xst:647 - Input <XB_RESET_8> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <CP_MCU_RESET_L>.
+    Found 1-bit register for signal <CP_MCU_RESET_COMPLETE>.
+    Found 16-bit register for signal <CLK_40MHZ_0_DEG_COUNTER>.
+    Found 16-bit adder for signal <CLK_40MHZ_0_DEG_COUNTER[15]_GND_24_o_add_0_OUT> created at line 126.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <CLK_RST_CTRL> synthesized.
+
+Synthesizing Unit <CLK_GEN_CORE>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\ipcore_dir\CLK_GEN_CORE.vhd".
+    Summary:
+	no macro.
+Unit <CLK_GEN_CORE> synthesized.
+
+Synthesizing Unit <UART_SYSTEM>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART_SYSTEM.vhd".
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART_SYSTEM.vhd" line 116: Output port <full> of the instance <FIFO_32X512_ASYNC_USER_R_INST> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <UART_CS_L>.
+    Found 1-bit register for signal <UART_TX_L>.
+    Found 1-bit register for signal <UART_RX_L>.
+    Found 1-bit register for signal <UART_TX_RDEN>.
+    Found 1-bit register for signal <UART_RX_FIFO_WREN>.
+    Found 2-bit register for signal <UART_RX_BYTE_COUNTER>.
+    Found 3-bit register for signal <UART_TX_PIPELINE_COUNTER>.
+    Found 32-bit register for signal <UART_DATA_OUT_32>.
+    Found 2-bit register for signal <UART_DATA_IN_MUX_COUNTER>.
+    Found 8-bit register for signal <UART_DATA_IN_8>.
+    Found 2-bit adder for signal <UART_DATA_IN_MUX_COUNTER[1]_GND_61_o_add_0_OUT> created at line 164.
+    Found 3-bit adder for signal <UART_TX_PIPELINE_COUNTER[2]_GND_61_o_add_19_OUT> created at line 251.
+    Found 2-bit adder for signal <UART_RX_BYTE_COUNTER[1]_GND_61_o_add_25_OUT> created at line 289.
+    Found 8-bit 4-to-1 multiplexer for signal <UART_DATA_IN_8[7]_UART_DATA_IN_32[31]_mux_10_OUT> created at line 175.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  52 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <UART_SYSTEM> synthesized.
+
+Synthesizing Unit <miniUART>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\miniUART.vhd".
+    Found 1-bit register for signal <IntTx_N>.
+    Found 1-bit register for signal <IntRx_N>.
+    Found 8-bit register for signal <CSReg>.
+WARNING:Xst:737 - Found 1-bit latch for signal <PWR_27_o_Read_DLATCH_2_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_3_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<7>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_5_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<6>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_7_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<5>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_9_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<4>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_11_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<3>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_13_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<2>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_15_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<1>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[7]_Load_DLATCH_17_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <DataOut<0>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <PWR_35_o_Load_DLATCH_18_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[6]_Load_DLATCH_19_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<7>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[5]_Load_DLATCH_21_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<6>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[4]_Load_DLATCH_23_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<5>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[3]_Load_DLATCH_25_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<4>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[2]_Load_DLATCH_27_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<3>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[1]_Load_DLATCH_29_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<2>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataIn[0]_Load_DLATCH_31_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <TxData<1>> created at line 181
+    Found 1-bit tristate buffer for signal <TxData<0>> created at line 181
+WARNING:Xst:737 - Found 1-bit latch for signal <DataOut[7]_Read_DLATCH_1_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred  18 Latch(s).
+	inferred  18 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <miniUART> synthesized.
+
+Synthesizing Unit <ClkUnit>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\clkUnit.vhd".
+    Found 1-bit register for signal <ClkDiv26>.
+    Found 4-bit register for signal <DivClk10.Cnt10>.
+    Found 1-bit register for signal <tmpEnRX>.
+    Found 5-bit register for signal <DivClk16.Cnt16>.
+    Found 1-bit register for signal <tmpEnTX>.
+    Found 5-bit register for signal <DivClk26.Cnt26>.
+    Found 5-bit adder for signal <DivClk26.Cnt26[4]_GND_64_o_add_0_OUT> created at line 72.
+    Found 4-bit adder for signal <DivClk10.Cnt10[3]_GND_64_o_add_5_OUT> created at line 95.
+    Found 5-bit adder for signal <DivClk16.Cnt16[4]_GND_64_o_add_11_OUT> created at line 118.
+    Found 5-bit adder for signal <DivClk16.Cnt16[4]_GND_64_o_add_14_OUT> created at line 123.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <ClkUnit> synthesized.
+
+Synthesizing Unit <TxUnit>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\TxUnit.vhd".
+    Found 1-bit register for signal <tmpTBufE>.
+    Found 1-bit register for signal <TxD>.
+    Found 4-bit register for signal <BitCnt>.
+    Found 8-bit register for signal <TBuff>.
+    Found 8-bit register for signal <TReg>.
+    Found 1-bit register for signal <tmpTRegE>.
+    Found 4-bit adder for signal <BitCnt[3]_GND_65_o_add_1_OUT> created at line 101.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred  13 Multiplexer(s).
+Unit <TxUnit> synthesized.
+
+Synthesizing Unit <RxUnit>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\UART\RxUnit.vhd".
+    Found 4-bit register for signal <SampleCnt>.
+    Found 1-bit register for signal <Start>.
+    Found 1-bit register for signal <tmpDRdy>.
+    Found 1-bit register for signal <frameErr>.
+    Found 1-bit register for signal <outErr>.
+    Found 8-bit register for signal <ShtReg>.
+    Found 8-bit register for signal <DOut>.
+    Found 1-bit register for signal <tmpRxD>.
+    Found 4-bit register for signal <BitCnt>.
+    Found 3-bit adder for signal <n0137> created at line 55.
+    Found 4-bit adder for signal <n0139> created at line 55.
+    Found 5-bit adder for signal <n0141> created at line 55.
+    Found 3-bit adder for signal <n0144> created at line 55.
+    Found 4-bit adder for signal <n0146> created at line 55.
+    Found 5-bit adder for signal <n0148> created at line 55.
+    Found 4-bit adder for signal <BitCnt[3]_GND_66_o_add_20_OUT> created at line 118.
+    Found 4-bit adder for signal <SampleCnt[3]_GND_66_o_add_21_OUT> created at line 142.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <RxUnit> synthesized.
+
+Synthesizing Unit <i2s_audio>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v".
+    Set property "IOB = TRUE" for signal <audio_mclk>.
+    Set property "IOB = TRUE" for signal <audio_dac>.
+    Set property "IOB = TRUE" for signal <audio_adc_reg>.
+    Set property "IOB = TRUE" for signal <audio_bclk_reg>.
+    Set property "IOB = TRUE" for signal <audio_lrclk_reg>.
+WARNING:Xst:647 - Input <quiesce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" line 126: Output port <empty> of the instance <playback_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\i2s_audio.v" line 139: Output port <full> of the instance <record_fifo> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <audio_mclk>.
+    Found 1-bit register for signal <audio_adc_reg>.
+    Found 1-bit register for signal <audio_bclk_reg>.
+    Found 1-bit register for signal <audio_lrclk_reg>.
+    Found 2-bit register for signal <bclk_d>.
+    Found 1-bit register for signal <audio_lrclk_reg_d>.
+    Found 1-bit register for signal <fifo_rd_en>.
+    Found 16-bit register for signal <play_shreg>.
+    Found 1-bit register for signal <audio_dac>.
+    Found 1-bit register for signal <fifo_wr_en>.
+    Found 32-bit register for signal <record_shreg>.
+    Found 5-bit register for signal <record_count>.
+    Found 1-bit register for signal <write_when_done>.
+    Found 2-bit register for signal <clk_div>.
+    Found 2-bit adder for signal <clk_div[1]_GND_104_o_add_1_OUT> created at line 55.
+    Found 5-bit subtractor for signal <GND_104_o_GND_104_o_sub_11_OUT<4:0>> created at line 101.
+INFO:Xst:2774 - HDL ADVISOR - IOB property attached to signal audio_lrclk_reg may hinder XST clustering optimizations.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <i2s_audio> synthesized.
+
+Synthesizing Unit <smbus>.
+    Related source file is "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\smbus.v".
+        clk_freq = 150
+        st_idle = 0
+        st_start = 1
+        st_fetch = 2
+        st_bit0 = 3
+        st_bit1 = 4
+        st_bit2 = 5
+        st_ack0 = 6
+        st_ack1 = 7
+        st_ack2 = 8
+        st_stop0 = 9
+        st_stop1 = 10
+        st_stop2 = 11
+INFO:Xst:3210 - "C:\Users\castone\Capstone\Development_Files\QPSK_Radio_Kinect_Simulink_uart_wrap_test\tx_system\vhdl\src\smbus.v" line 225: Output port <full> of the instance <fifo> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <sdata_sample>.
+    Found 1-bit register for signal <fifo_wr_en>.
+    Found 1-bit register for signal <open_d>.
+    Found 1-bit register for signal <stop_pending>.
+    Found 8-bit register for signal <write_byte>.
+    Found 1-bit register for signal <write_byte_valid>.
+    Found 12-bit register for signal <div_counter>.
+    Found 1-bit register for signal <pre_en>.
+    Found 1-bit register for signal <sclk_logic>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <sdata_logic>.
+    Found 1-bit register for signal <dir_write>.
+    Found 1-bit register for signal <first>.
+    Found 1-bit register for signal <save_direction>.
+    Found 3-bit register for signal <idx>.
+    Found 8-bit register for signal <read_byte>.
+    Found 1-bit register for signal <SMBus_en>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 8                                              |
+    | Clock              | bus_clk (rising_edge)                          |
+    | Reset              | quiesce (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <div_counter[11]_GND_106_o_add_5_OUT> created at line 87.
+    Found 3-bit subtractor for signal <GND_106_o_GND_106_o_sub_11_OUT<2:0>> created at line 145.
+    Found 1-bit 8-to-1 multiplexer for signal <idx[2]_write_byte[7]_Mux_8_o> created at line 126.
+    Found 1-bit tristate buffer for signal <smb_sclk> created at line 55
+    Found 1-bit tristate buffer for signal <smb_sdata> created at line 56
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
+	inferred   2 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <smbus> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 32x8-bit single-port RAM                              : 5
+# Adders/Subtractors                                   : 21
+ 12-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 2-bit adder                                           : 3
+ 3-bit adder                                           : 3
+ 3-bit subtractor                                      : 1
+ 4-bit adder                                           : 6
+ 5-bit adder                                           : 5
+ 5-bit subtractor                                      : 1
+# Registers                                            : 69
+ 1-bit register                                        : 41
+ 12-bit register                                       : 1
+ 16-bit register                                       : 2
+ 2-bit register                                        : 4
+ 3-bit register                                        : 2
+ 32-bit register                                       : 3
+ 4-bit register                                        : 4
+ 5-bit register                                        : 3
+ 8-bit register                                        : 9
+# Latches                                              : 18
+ 1-bit latch                                           : 18
+# Multiplexers                                         : 67
+ 1-bit 2-to-1 multiplexer                              : 39
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 11
+ 5-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 3
+ 8-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 18
+ 1-bit tristate buffer                                 : 18
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_xillybus_0_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_xillybus_lite_0_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_processing_system7_0_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_xillyvga_0_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/cores/xillyvga_core.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/runonce/vga_fifo.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_axi_interconnect_0_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_axi4lite_0_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/system/implementation/system_axi_interconnect_1_wrapper.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/cores/xillybus_core.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/runonce/fifo_32x512.ngc>.
+Reading core <ipcore_dir/fifo_8x2048_async_tk.ngc>.
+Reading core <ipcore_dir/FIFO_32x512_ASYNC.ngc>.
+Reading core <C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink_uart_wrap_test/tx_system/runonce/fifo_8x2048.ngc>.
+Loading core <system_xillybus_0_wrapper> for timing and area information for instance <xillybus_0>.
+Loading core <system_xillybus_lite_0_wrapper> for timing and area information for instance <xillybus_lite_0>.
+Loading core <system_processing_system7_0_wrapper> for timing and area information for instance <processing_system7_0>.
+Loading core <vga_fifo> for timing and area information for instance <vga_fifo_wrapper_ins/vga_fifo>.
+Loading core <xillyvga_core> for timing and area information for instance <xillyvga_0/xillyvga_core_ins>.
+Loading core <system_xillyvga_0_wrapper> for timing and area information for instance <xillyvga_0>.
+Loading core <system_axi_interconnect_0_wrapper> for timing and area information for instance <axi_interconnect_0>.
+Loading core <system_axi4lite_0_wrapper> for timing and area information for instance <axi4lite_0>.
+Loading core <system_axi_interconnect_1_wrapper> for timing and area information for instance <axi_interconnect_1>.
+Loading core <system> for timing and area information for instance <system_i>.
+Loading core <xillybus_core> for timing and area information for instance <xillybus_core_ins>.
+Loading core <fifo_32x512> for timing and area information for instance <playback_fifo>.
+Loading core <fifo_32x512> for timing and area information for instance <record_fifo>.
+Loading core <fifo_8x2048_async_tk> for timing and area information for instance <FIFO_8X2048_ASYNC_TK_INST>.
+Loading core <FIFO_32x512_ASYNC> for timing and area information for instance <FIFO_32X512_ASYNC_USER_W_INST>.
+Loading core <FIFO_32x512_ASYNC> for timing and area information for instance <FIFO_32X512_ASYNC_USER_R_INST>.
+Loading core <fifo_8x2048> for timing and area information for instance <fifo>.
+
+Synthesizing (advanced) Unit <CLK_RST_CTRL>.
+The following registers are absorbed into counter <CLK_40MHZ_0_DEG_COUNTER>: 1 register on signal <CLK_40MHZ_0_DEG_COUNTER>.
+Unit <CLK_RST_CTRL> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ClkUnit>.
+The following registers are absorbed into counter <DivClk26.Cnt26>: 1 register on signal <DivClk26.Cnt26>.
+Unit <ClkUnit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RxUnit>.
+The following registers are absorbed into counter <SampleCnt>: 1 register on signal <SampleCnt>.
+Unit <RxUnit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_SYSTEM>.
+The following registers are absorbed into counter <UART_RX_BYTE_COUNTER>: 1 register on signal <UART_RX_BYTE_COUNTER>.
+The following registers are absorbed into counter <UART_TX_PIPELINE_COUNTER>: 1 register on signal <UART_TX_PIPELINE_COUNTER>.
+The following registers are absorbed into counter <UART_DATA_IN_MUX_COUNTER>: 1 register on signal <UART_DATA_IN_MUX_COUNTER>.
+Unit <UART_SYSTEM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <i2s_audio>.
+The following registers are absorbed into counter <clk_div>: 1 register on signal <clk_div>.
+Unit <i2s_audio> synthesized (advanced).
+
+Synthesizing (advanced) Unit <smbus>.
+The following registers are absorbed into counter <div_counter>: 1 register on signal <div_counter>.
+The following registers are absorbed into counter <idx>: 1 register on signal <idx>.
+Unit <smbus> synthesized (advanced).
+
+Synthesizing (advanced) Unit <xillydemo>.
+INFO:Xst:3231 - The small RAM <Mram_demoarray> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <bus_clk>       | rise     |
+    |     weA            | connected to signal <user_w_mem_8_wren> | high     |
+    |     addrA          | connected to signal <user_mem_8_addr> |          |
+    |     diA            | connected to signal <user_w_mem_8_data> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray0> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<0>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<7:0>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<1>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<15:8>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray2> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<2>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<23:16>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_litearray3> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <user_clk>      | rise     |
+    |     weA            | connected to signal <user_wstrb<3>> | high     |
+    |     addrA          | connected to signal <user_addr>     |          |
+    |     diA            | connected to signal <user_wr_data<31:24>> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <xillydemo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 32x8-bit single-port distributed RAM                  : 5
+# Adders/Subtractors                                   : 13
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 5
+ 5-bit adder                                           : 5
+ 5-bit subtractor                                      : 1
+# Counters                                             : 9
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 3
+ 3-bit down counter                                    : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 263
+ Flip-Flops                                            : 263
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 64
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 10
+ 5-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <smbus_ins/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1011  | 1011
+ 1001  | 1001
+ 1010  | 1010
+-------------------
+WARNING:Xst:1710 - FF/Latch <CSReg_0> (without init value) has a constant value of 0 in block <miniUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CSReg_1> (without init value) has a constant value of 0 in block <miniUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CSReg_4> (without init value) has a constant value of 1 in block <miniUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CSReg_5> (without init value) has a constant value of 1 in block <miniUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CSReg_6> (without init value) has a constant value of 1 in block <miniUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CSReg_7> (without init value) has a constant value of 1 in block <miniUART>. This FF/Latch will be trimmed during the optimization process.
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_SRSTB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PS_SRSTB>
+   Output port PS7:PSSRSTB of instance <xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_CLK>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PS_CLK>
+   Output port PS7:PSCLK of instance <xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <processing_system7_0> on signal <PS_PORB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <PS_PORB>
+   Output port PS7:PSPORB of instance <xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i>
+WARNING:Xst:2042 - Unit miniUART: 16 internal tristates are replaced by logic (pull-up yes): DataOut<0>, DataOut<1>, DataOut<2>, DataOut<3>, DataOut<4>, DataOut<5>, DataOut<6>, DataOut<7>, TxData<0>, TxData<1>, TxData<2>, TxData<3>, TxData<4>, TxData<5>, TxData<6>, TxData<7>.
+
+Optimizing unit <xillydemo> ...
+
+Optimizing unit <xillybus> ...
+
+Optimizing unit <i2s_audio> ...
+
+Optimizing unit <UART_SYSTEM> ...
+
+Optimizing unit <miniUART> ...
+
+Optimizing unit <ClkUnit> ...
+
+Optimizing unit <TxUnit> ...
+
+Optimizing unit <RxUnit> ...
+
+Optimizing unit <CLK_RST_CTRL> ...
+WARNING:Xst:1710 - FF/Latch <smbus_ins/div_counter_11> (without init value) has a constant value of 0 in block <xillydemo>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block xillydemo, actual ratio is 5.
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio_ins/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio_ins/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio_ins/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio_ins/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <smbus_ins/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <smbus_ins/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <pre_user_wren> in Unit <xillybus_lite_0> is equivalent to the following FF/Latch : <pre_user_wren_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <vga_fifo_wrapper_ins/vga_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 2 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio_ins/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio_ins/record_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <audio_ins/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <audio_ins/playback_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <RF_TX_TOP_INST/FIFO_8X2048_ASYNC_TK_INST> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_R_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <RF_TX_TOP_INST/UART_SYSTEM_INST/FIFO_32X512_ASYNC_USER_W_INST> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <smbus_ins/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <smbus_ins/fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+Replicating register audio_ins/audio_dac to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+Processing Unit <xillydemo> :
+	Found 2-bit shift register for signal <smbus_ins/SMBus_en>.
+Unit <xillydemo> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 308
+ Flip-Flops                                            : 308
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : xillydemo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6298
+#      GND                         : 25
+#      INV                         : 303
+#      LUT1                        : 252
+#      LUT2                        : 564
+#      LUT3                        : 736
+#      LUT4                        : 739
+#      LUT5                        : 650
+#      LUT6                        : 1196
+#      MUXCY                       : 1021
+#      MUXF7                       : 53
+#      VCC                         : 14
+#      XORCY                       : 745
+# FlipFlops/Latches                : 4387
+#      FD                          : 528
+#      FDC                         : 362
+#      FDCE                        : 186
+#      FDE                         : 1824
+#      FDP                         : 60
+#      FDPE                        : 27
+#      FDR                         : 445
+#      FDRE                        : 751
+#      FDS                         : 34
+#      FDSE                        : 151
+#      LDCE_1                      : 18
+#      ODDR                        : 1
+# RAMS                             : 104
+#      RAM32M                      : 15
+#      RAM32X1D                    : 7
+#      RAM32X1S                    : 40
+#      RAM64M                      : 16
+#      RAM64X1D                    : 16
+#      RAMB18E1                    : 10
+# Shift Registers                  : 5
+#      SRLC16E                     : 5
+# Clock Buffers                    : 8
+#      BUFG                        : 7
+#      BUFGP                       : 1
+# IO Buffers                       : 110
+#      IBUF                        : 9
+#      IBUFG                       : 1
+#      IOBUF                       : 57
+#      OBUF                        : 42
+#      OBUFT                       : 1
+# Others                           : 3
+#      MMCME2_ADV                  : 1
+#      PLLE2_ADV                   : 1
+#      PS7                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            4368  out of  106400     4%  
+ Number of Slice LUTs:                 4655  out of  53200     8%  
+    Number used as Logic:              4440  out of  53200     8%  
+    Number used as Memory:              215  out of  17400     1%  
+       Number used as RAM:              210
+       Number used as SRL:                5
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6647
+   Number with an unused Flip Flop:    2279  out of   6647    34%  
+   Number with an unused LUT:          1992  out of   6647    29%  
+   Number of fully used LUT-FF pairs:  2376  out of   6647    35%  
+   Number of unique control sets:       302
+
+IO Utilization: 
+ Number of IOs:                         238
+ Number of bonded IOBs:                 111  out of    200    55%  
+    IOB Flip Flops/Latches:              19
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                5  out of    140     3%  
+    Number using Block RAM only:          5
+ Number of BUFG/BUFGCTRLs:                8  out of     32    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                          | Clock buffer(FF name)                                                                                                                       | Load  |
+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-------+
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>| BUFG                                                                                                                                        | 3922  |
+RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_UNBUF                              | BUFG                                                                                                                                        | 1     |
+clk_100                                                                               | BUFGP                                                                                                                                       | 3     |
+RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF                                | BUFG                                                                                                                                        | 352   |
+RF_TX_TOP_INST/UART_SYSTEM_INST/UART_CS_L                                             | NONE(RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/DataOut[7]_Read_DLATCH_1_q)                                                              | 18    |
+clk_100                                                                               | PLLE2_ADV:CLKOUT0                                                                                                                           | 204   |
+xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/m_axi_bready            | NONE(xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/screensaver_ins/BRAM_SINGLE_MACRO_inst/bram18_single_bl.bram18_single_bl)| 1     |
+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+Control Signal                                                                             | Buffer(FF name)                                                        | Load  |
+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+xillybus_ins/xillybus_core_ins/M_AXI_AWCACHE_w<0>(xillybus_ins/xillybus_core_ins/XST_GND:G)| NONE(xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/Mram_dma_address)| 12    |
+xillybus_ins/xillybus_core_ins/M_AXI_AWCACHE_w<1>(xillybus_ins/xillybus_core_ins/XST_VCC:P)| NONE(xillybus_ins/xillybus_core_ins/axi4_send_dma_ins/Mram_dma_address)| 8     |
+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 11.708ns (Maximum Frequency: 85.413MHz)
+   Minimum input arrival time before clock: 2.344ns
+   Maximum output required time after clock: 2.712ns
+   Maximum combinational path delay: 0.865ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>'
+  Clock period: 4.162ns (frequency: 240.269MHz)
+  Total number of paths / destination ports: 130123 / 9068
+-------------------------------------------------------------------------
+Delay:               4.162ns (Levels of Logic = 7)
+  Source:            xillybus_ins/xillybus_core_ins/unitw_6_ins/unitw_6_end_offset_3 (FF)
+  Destination:       xillybus_ins/xillybus_core_ins/unitw_6_ins/unitw_6_active (FF)
+  Source Clock:      xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+  Destination Clock: xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+
+  Data Path: xillybus_ins/xillybus_core_ins/unitw_6_ins/unitw_6_end_offset_3 to xillybus_ins/xillybus_core_ins/unitw_6_ins/unitw_6_active
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             2   0.282   0.745  unitw_6_ins/unitw_6_end_offset_3 (unitw_6_ins/unitw_6_end_offset[3])
+     LUT6:I0->O            1   0.053   0.602  unitw_6_ins/unitw_6_submit_buffer4 (unitw_6_ins/unitw_6_submit_buffer5)
+     LUT5:I2->O            1   0.053   0.413  unitw_6_ins/unitw_6_submit_buffer6_SW0 (N398)
+     LUT6:I5->O            2   0.053   0.419  unitw_6_ins/unitw_6_submit_buffer6 (unitw_6_ins/unitw_6_submit_buffer7)
+     LUT6:I5->O           13   0.053   0.493  unitw_6_ins/unitw_6_submit_buffer7 (unitw_6_ins/unitw_6_submit_buffer)
+     LUT3:I2->O            1   0.053   0.413  unitw_6_ins/_n0451_inv_SW0 (N231)
+     LUT5:I4->O            1   0.053   0.413  unitw_6_ins/unitw_6_active_glue_set_SW0 (N316)
+     LUT6:I5->O            1   0.053   0.000  unitw_6_ins/unitw_6_active_glue_set (unitw_6_ins/unitw_6_active_glue_set)
+     FDR:D                     0.011          unitw_6_ins/unitw_6_active
+    ----------------------------------------
+    Total                      4.162ns (0.664ns logic, 3.498ns route)
+                                       (16.0% logic, 84.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100'
+  Clock period: 11.708ns (frequency: 85.413MHz)
+  Total number of paths / destination ports: 4028 / 453
+-------------------------------------------------------------------------
+Delay:               4.503ns (Levels of Logic = 4)
+  Source:            xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Destination:       xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (RAM)
+  Source Clock:      clk_100 rising 2.6X
+  Destination Clock: clk_100 rising 2.6X
+
+  Data Path: xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram to xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB18E1:CLKARDCLK->DOBDO13    1   2.454   0.485  ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram (DOUTB<32>)
+     end scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:DOUTB<32>'
+     end scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo:dout[32]'
+     LUT4:I2->O            3   0.053   0.616  scan_ins/fifo_rd_en1 (fifo_rd_en_w)
+     begin scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo:rd_en'
+     LUT3:I0->O            1   0.053   0.399  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/tmp_ram_rd_en)
+     begin scope: 'xillybus_ins/system_i/xillyvga_0/xillyvga_0/xillyvga_core_ins/vga_fifo_wrapper_ins/vga_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr:ENB'
+     RAMB18E1:ENARDEN          0.443          ramloop[0].ram.r/v6_noinit.ram/SDP.WIDE_PRIM18.ram
+    ----------------------------------------
+    Total                      4.503ns (3.003ns logic, 1.500ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF'
+  Clock period: 3.164ns (frequency: 316.056MHz)
+  Total number of paths / destination ports: 2167 / 700
+-------------------------------------------------------------------------
+Delay:               3.164ns (Levels of Logic = 5)
+  Source:            RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_COUNTER_11 (FF)
+  Destination:       RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L (FF)
+  Source Clock:      RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF rising
+  Destination Clock: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF rising
+
+  Data Path: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_COUNTER_11 to RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.282   0.745  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_COUNTER_11 (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_COUNTER_11)
+     LUT6:I0->O            1   0.053   0.413  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_COMPLETE_CLK_40MHZ_0_DEG_COUNTER[15]_AND_1_o1_SW0 (N40)
+     LUT6:I5->O            3   0.053   0.427  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_COMPLETE_CLK_40MHZ_0_DEG_COUNTER[15]_AND_1_o1 (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_COMPLETE_CLK_40MHZ_0_DEG_COUNTER[15]_AND_1_o1)
+     LUT6:I5->O            2   0.053   0.419  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_COUNTER[15]_GND_24_o_equal_4_o<15>1 (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_COUNTER[15]_GND_24_o_equal_4_o)
+     LUT6:I5->O            1   0.053   0.602  RF_TX_TOP_INST/CLK_RST_CTRL_INST/_n0024_inv (RF_TX_TOP_INST/CLK_RST_CTRL_INST/_n0024_inv)
+     LUT3:I0->O            1   0.053   0.000  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L_rstpot (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L_rstpot)
+     FDP:D                     0.011          RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L
+    ----------------------------------------
+    Total                      3.164ns (0.558ns logic, 2.606ns route)
+                                       (17.6% logic, 82.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_UNBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.011ns (Levels of Logic = 1)
+  Source:            RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst:LOCKED (PAD)
+  Destination:       RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST (FF)
+  Destination Clock: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_UNBUF rising
+
+  Data Path: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst:LOCKED to RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    MMCME2_ADV:LOCKED      5   0.000   0.426  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_PLL_LOCKED_INT)
+     INV:I->O             19   0.067   0.518  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_PLL_LOCKED_INT_inv1_INV_0 (RF_TX_TOP_INST/NOT_CLK_GEN_PLL_LOCKED)
+     ODDR:R                    0.000          RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST
+    ----------------------------------------
+    Total                      1.011ns (0.067ns logic, 0.944ns route)
+                                       (6.6% logic, 93.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>'
+  Total number of paths / destination ports: 1027 / 598
+-------------------------------------------------------------------------
+Offset:              2.341ns (Levels of Logic = 16)
+  Source:            xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:SAXIHP0RVALID (PAD)
+  Destination:       xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/dw_count_9 (FF)
+  Destination Clock: xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+
+  Data Path: xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:SAXIHP0RVALID to xillybus_ins/xillybus_core_ins/axi4_recv_dma_ins/dw_count_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:SAXIHP0RVALID     18   0.000   0.000  processing_system7_0/PS7_i (S_AXI_HP0_RVALID)
+     end scope: 'xillybus_ins/system_i/processing_system7_0:S_AXI_HP0_RVALID'
+     begin scope: 'xillybus_ins/system_i/axi_interconnect_0:M_AXI_RVALID<0>'
+     end scope: 'xillybus_ins/system_i/axi_interconnect_0:S_AXI_RVALID<0>'
+     begin scope: 'xillybus_ins/system_i/xillybus_0:m_axi_rvalid'
+     end scope: 'xillybus_ins/system_i/xillybus_0:xillybus_M_AXI_RVALID'
+     end scope: 'xillybus_ins/system_i:xillybus_M_AXI_RVALID'
+     begin scope: 'xillybus_ins/xillybus_core_ins:M_AXI_RVALID_w'
+     LUT3:I1->O           51   0.053   0.896  axi4_recv_dma_ins/M_AXI_RVALID_drop_AND_92_o1 (axi4_recv_dma_ins/M_AXI_RVALID_drop_AND_92_o)
+     LUT6:I0->O            1   0.053   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_lut[0] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_lut[0])
+     MUXCY:S->O            1   0.291   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[0] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[0])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[1] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[1])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[2] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[2])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[3] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[3])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[4] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[4])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[5] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[5])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[6] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[6])
+     MUXCY:CI->O           1   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[7] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[7])
+     MUXCY:CI->O           0   0.015   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[8] (axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_cy[8])
+     XORCY:CI->O           1   0.320   0.000  axi4_recv_dma_ins/Mmux_state[2]_GND_11_o_mux_61_OUT_rs_xor[9] (axi4_recv_dma_ins/state[2]_GND_11_o_mux_61_OUT[9])
+     FDE:D                     0.011          axi4_recv_dma_ins/dw_count_9
+    ----------------------------------------
+    Total                      2.341ns (1.445ns logic, 0.896ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF'
+  Total number of paths / destination ports: 296 / 159
+-------------------------------------------------------------------------
+Offset:              2.344ns (Levels of Logic = 3)
+  Source:            RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst:LOCKED (PAD)
+  Destination:       RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpRxD (FF)
+  Destination Clock: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF rising
+
+  Data Path: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst:LOCKED to RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpRxD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    MMCME2_ADV:LOCKED      5   0.000   0.662  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_CORE_INST/mmcm_adv_inst (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_GEN_PLL_LOCKED_INT)
+     LUT4:I0->O          117   0.053   0.910  RF_TX_TOP_INST/CLK_RST_CTRL_INST/UART_SYSTEM_RESET1 (RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/ClkDiv/Reset_inv)
+     LUT6:I0->O            1   0.053   0.602  RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0226_inv (RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/_n0226_inv)
+     LUT3:I0->O            1   0.053   0.000  RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpRxD_rstpot (RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpRxD_rstpot)
+     FD:D                      0.011          RF_TX_TOP_INST/UART_SYSTEM_INST/MINIUART_INST/RxDev/tmpRxD
+    ----------------------------------------
+    Total                      2.344ns (0.170ns logic, 2.174ns route)
+                                       (7.3% logic, 92.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>'
+  Total number of paths / destination ports: 451 / 212
+-------------------------------------------------------------------------
+Offset:              2.712ns (Levels of Logic = 6)
+  Source:            xillybus_ins/system_i/xillybus_lite_0/xillybus_lite_0/S_AXI_RVALID (FF)
+  Destination:       xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RVALID (PAD)
+  Source Clock:      xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1> rising
+
+  Data Path: xillybus_ins/system_i/xillybus_lite_0/xillybus_lite_0/S_AXI_RVALID to xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RVALID
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.282   0.512  S_AXI_RVALID (S_AXI_RVALID)
+     end scope: 'xillybus_ins/system_i/xillybus_lite_0/xillybus_lite_0:S_AXI_RVALID'
+     end scope: 'xillybus_ins/system_i/xillybus_lite_0:S_AXI_RVALID'
+     begin scope: 'xillybus_ins/system_i/axi4lite_0:M_AXI_RVALID<2>'
+     LUT2:I0->O            1   0.053   0.635  axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[2].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/S_AXI_RVALID1 (axi4lite_0/mc_mp_rvalid<2>)
+     LUT6:I2->O            1   0.053   0.725  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_rvalid_SW0 (N12)
+     LUT5:I0->O            1   0.053   0.399  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_rvalid (DEBUG_SF_CB_RDATACONTROL<0>)
+     end scope: 'xillybus_ins/system_i/axi4lite_0:S_AXI_RVALID<0>'
+     begin scope: 'xillybus_ins/system_i/processing_system7_0:M_AXI_GP0_RVALID'
+    PS7:MAXIGP0RVALID          0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      2.712ns (0.441ns logic, 2.271ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 1)
+  Source:            xillybus_ins/vga_iob_ff<5> (FF)
+  Destination:       vga4_blue<3> (PAD)
+  Source Clock:      clk_100 rising 2.6X
+
+  Data Path: xillybus_ins/vga_iob_ff<5> to vga4_blue<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.399  xillybus_ins/vga_iob_ff<5> (vga4_blue_3_OBUF)
+     OBUF:I->O                 0.000          vga4_blue_3_OBUF (vga4_blue<3>)
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.687ns (Levels of Logic = 1)
+  Source:            RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L (FF)
+  Destination:       CP_MCU_RESET_L_EXT (PAD)
+  Source Clock:      RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF rising
+
+  Data Path: RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L to CP_MCU_RESET_L_EXT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.282   0.405  RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L (RF_TX_TOP_INST/CLK_RST_CTRL_INST/CP_MCU_RESET_L)
+     OBUF:I->O                 0.000          CP_MCU_RESET_L_EXT_OBUF (CP_MCU_RESET_L_EXT)
+    ----------------------------------------
+    Total                      0.687ns (0.282ns logic, 0.405ns route)
+                                       (41.0% logic, 59.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_UNBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.006ns (Levels of Logic = 1)
+  Source:            RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST (FF)
+  Destination:       CP_TX_DAC_CLK_EXT (PAD)
+  Source Clock:      RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_180_DEG_UNBUF rising
+
+  Data Path: RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST to CP_TX_DAC_CLK_EXT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     ODDR:C->Q             1   0.607   0.399  RF_TX_TOP_INST/CP_TX_DAC_CLK_ODDR_INST (CP_TX_DAC_CLK_EXT_OBUF)
+     OBUF:I->O                 0.000          CP_TX_DAC_CLK_EXT_OBUF (CP_TX_DAC_CLK_EXT)
+    ----------------------------------------
+    Total                      1.006ns (0.607ns logic, 0.399ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 240 / 184
+-------------------------------------------------------------------------
+Delay:               0.865ns (Levels of Logic = 3)
+  Source:            xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:EMIOGPIOTN55 (PAD)
+  Destination:       PS_GPIO<55> (PAD)
+
+  Data Path: xillybus_ins/system_i/processing_system7_0/processing_system7_0/PS7_i:EMIOGPIOTN55 to PS_GPIO<55>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:EMIOGPIOTN55       1   0.000   0.399  processing_system7_0/PS7_i (processing_system7_0/gpio_out_t_n<55>)
+     INV:I->O              1   0.067   0.399  processing_system7_0/GPIO_T<55>1_INV_0 (GPIO_T<55>)
+     end scope: 'xillybus_ins/system_i/processing_system7_0:GPIO_T<55>'
+     IOBUF:T->IO               0.000          iobuf_0 (processing_system7_0_GPIO<55>)
+     end scope: 'xillybus_ins/system_i:processing_system7_0_GPIO<55>'
+    ----------------------------------------
+    Total                      0.865ns (0.067ns logic, 0.798ns route)
+                                       (7.7% logic, 92.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF                                |    3.164|         |         |         |
+RF_TX_TOP_INST/UART_SYSTEM_INST/UART_CS_L                                             |    0.945|         |         |         |
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>|    2.482|         |         |         |
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RF_TX_TOP_INST/UART_SYSTEM_INST/UART_CS_L
+------------------------------------------------------+---------+---------+---------+---------+
+                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------+---------+---------+---------+---------+
+RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF|    1.751|         |         |         |
+------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+clk_100                                                                               |    4.503|         |         |         |
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>|    2.945|         |         |         |
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+RF_TX_TOP_INST/CLK_RST_CTRL_INST/CLK_40MHZ_0_DEG_UNBUF                                |    1.424|         |         |         |
+clk_100                                                                               |    1.054|         |         |         |
+xillybus_ins/system_i/processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<1>|    4.162|         |         |         |
+--------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 35.81 secs
+ 
+--> 
+
+Total memory usage is 515728 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   52 (   0 filtered)
+Number of infos    :   88 (   0 filtered)
+

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2.1 (64-bit)
+# Build 200253 by xbuild on Wed Aug 29 11:48:13 MDT 2012
+# Start of session at: Thu May 23 22:23:43 2013
+# Process ID: 6296
+# Log file: C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -83 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/pa.fromNetlist.tcl
+# create_project -name xillydemo -dir "C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/planAhead_run_1" -part xc7z020clg484-1
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl/xillydemo.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/castone/Capstone/Development_Files/QPSK_Radio_Kinect_Simulink/tx_system/vhdl} {ipcore_dir} {../system/implementation} {../cores} {../runonce} }
+ERROR: 'rdi::source' was cancelled
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead
